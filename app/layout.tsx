@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Poppins, Libre_Baskerville } from "next/font/google";
 import "./globals.css";
 import { Providers } from "./providers";
+import { CustomCursor } from "./components/CustomCursor";
 
 const poppins = Poppins({
 	variable: "--font-poppins",
@@ -28,7 +29,10 @@ export default function RootLayout({
 	return (
 		<html lang="en" className="scroll-smooth">
 			<body className={`${poppins.variable} ${libre.variable} antialiased`}>
-				<Providers>{children}</Providers>
+				<Providers>
+					<CustomCursor />
+					{children}
+				</Providers>
 			</body>
 		</html>
 	);
