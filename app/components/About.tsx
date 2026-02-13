@@ -19,7 +19,7 @@ export default function About() {
       <div className="orb orb-blue w-80 h-80 -top-20 right-0" />
       <div className="section-divider mb-20" />
 
-      <div className="container flex flex-col lg:flex-row items-center gap-28">
+      <div className="container flex flex-col lg:flex-row items-center gap-30">
         {/* Image Side */}
         <motion.div
           className="flex-1 flex justify-center"
@@ -46,7 +46,7 @@ export default function About() {
 
         {/* Text Side */}
         <motion.div
-          className="flex-1 text-center lg:text-left space-y-14"
+          className="flex-1 text-center lg:text-left space-y-16"
           initial={{ opacity: 0, x: 80 }}
           animate={isInView ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.8, delay: 0.15, ease: 'easeOut' }}
@@ -69,7 +69,7 @@ export default function About() {
             Building digital stories through design and development.
           </p>
 
-          <div className="text-gray-300 space-y-10 leading-relaxed text-lg">
+          <div className="text-gray-300 space-y-12 leading-relaxed text-lg">
             <p>
               Hello there, I&apos;m a UI/UX designer and front end web developer who loves turning ideas into beautiful,
               meaningful digital experiences. I combine creative design thinking with clean, responsive development to
@@ -90,7 +90,7 @@ export default function About() {
 
           {/* Stats */}
           <motion.div
-            className="grid grid-cols-3 gap-10 pt-12"
+            className="grid grid-cols-3 gap-12 pt-14"
             initial="hidden"
             animate={isInView ? 'visible' : 'hidden'}
             variants={{ hidden: {}, visible: { transition: { staggerChildren: 0.1, delayChildren: 0.5 } } }}

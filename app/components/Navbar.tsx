@@ -31,7 +31,7 @@ export default function Navbar() {
           : 'bg-transparent'
       }`}
     >
-      <div className="container flex items-center justify-between py-8 md:py-10">
+      <div className="container flex items-center justify-between py-10 md:py-12">
         {/* Left */}
         <motion.a
           href="#home"

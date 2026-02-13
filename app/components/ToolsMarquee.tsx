@@ -5,21 +5,17 @@ import { motion, useInView } from 'framer-motion';
 
 const tools = [
   { name: 'Photoshop', icon: '/tools/photoshop.svg' },
-  { name: 'Canva', icon: '/tools/canva.svg' },
+  { name: 'Illustrator', icon: '/tools/illustrator.svg' },
   { name: 'Typescript', icon: '/tools/typescript.svg' },
   { name: 'Figma', icon: '/tools/figma.svg' },
-  { name: 'Nodejs', icon: '/tools/nodejs.svg' },
   { name: 'Nextjs', icon: '/tools/nextjs.svg' },
   { name: 'HTML', icon: '/tools/html.svg' },
   { name: 'CSS', icon: '/tools/css.svg' },
   { name: 'Javascript', icon: '/tools/javascript.svg' },
-  { name: 'MongoDB', icon: '/tools/mongodb.svg' },
   { name: 'Tailwind', icon: '/tools/tailwind.svg' },
-  { name: 'Python', icon: '/tools/python.svg' },
   { name: 'VS Code', icon: '/tools/vscode.svg' },
   { name: 'Git', icon: '/tools/git.svg' },
-  { name: 'GitHub', icon: '/tools/github.svg' },
-  { name: 'PowerBI', icon: '/tools/powerbi.svg' },
+  { name: 'React', icon: '/tools/react.svg' },
 ];
 
 export default function ToolsMarquee() {

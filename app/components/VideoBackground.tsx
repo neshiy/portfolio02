@@ -24,10 +24,7 @@ export default function VideoBackground() {
         playsInline
         className="w-full h-full object-cover"
       >
-        <source
-          src={theme === 'dark' ? '/home_vid.mp4' : '/home_vid(w).mp4'}
-          type="video/mp4"
-        />
+        <source src="/bgnew.mp4" type="video/mp4" />
       </video>
       <div className="absolute inset-0 bg-black/40" />
     </div>

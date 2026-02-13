@@ -12,7 +12,7 @@ export default function Projects() {
     {
       title: 'Software Engineering',
       description: 'Web applications, tools, and interactive experiences built with modern tech.',
-      href: '/projects/software',
+      href: '#contact',
       color: 'purple',
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" className="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
@@ -23,7 +23,7 @@ export default function Projects() {
     {
       title: 'Graphic Design',
       description: 'Visual identities, UI designs, and creative artwork showcasing design craft.',
-      href: '/projects/design',
+      href: '#contact',
       color: 'pink',
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" className="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
@@ -51,7 +51,7 @@ export default function Projects() {
           </h2>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-14 md:gap-18">
           {cards.map((card, i) => (
             <motion.div
               key={card.title}
@@ -95,7 +95,7 @@ export default function Projects() {
         </div>
 
         <motion.div
-          className="text-center mt-28"
+          className="text-center mt-32"
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.5 }}

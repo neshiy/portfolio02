@@ -98,7 +98,7 @@ export default function Footer() {
         </nav>
 
         <p className="text-sm text-gray-500 mt-2">
-          &copy; {new Date().getFullYear()} Christina Perera. All rights reserved.
+          © 2024 Christina Perera. All rights reserved.
         </p>
       </div>
     </footer>

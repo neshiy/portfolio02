@@ -70,7 +70,7 @@ export default function Hero() {
       <div className="orb orb-purple w-96 h-96 -top-20 -left-40 animate-float" style={{ animationDelay: '0s' }} />
       <div className="orb orb-pink w-72 h-72 bottom-10 right-10 animate-float" style={{ animationDelay: '2s' }} />
 
-      <div className="container flex flex-col md:flex-row items-center gap-28 relative z-10">
+      <div className="container flex flex-col md:flex-row items-center gap-30 relative z-10">
         {/* Left */}
         <motion.div
           className="flex-1 text-center md:text-left"
@@ -78,7 +78,7 @@ export default function Hero() {
           initial="hidden"
           animate="visible"
         >
-          <div className="space-y-12">
+          <div className="space-y-14">
             <motion.p variants={itemVariants} className="badge">
               <span className="w-2.5 h-2.5 bg-green-400 rounded-full animate-pulse" />
               Hello! I&apos;m
@@ -100,7 +100,7 @@ export default function Hero() {
               <span className="gradient-text">Web Developer</span>
             </motion.p>
 
-            <motion.div variants={itemVariants} className="flex flex-wrap justify-center md:justify-start gap-7 pt-12">
+            <motion.div variants={itemVariants} className="flex flex-wrap justify-center md:justify-start gap-8 pt-14">
               <a href="#projects" className="btn btn-outline text-lg px-10 py-5">
                 View Projects
               </a>
@@ -133,7 +133,7 @@ export default function Hero() {
             {/* Glow ring behind image */}
             <div className="absolute -inset-6 rounded-4xl bg-linear-to-br from-purple-500/20 via-pink-500/10 to-blue-500/20 blur-2xl animate-pulse-glow" />
             <div className="relative w-80 h-88 md:w-96 md:h-112 rounded-4xl overflow-hidden border border-white/15 shadow-2xl animate-float hover-tilt">
-              <img src="/bg-d.jpg" alt="Christina Perera" className="w-full h-full object-cover" />
+              <img src="/globe.svg" alt="Christina Perera" className="w-full h-full object-cover bg-black" />
               {/* Shimmer overlay */}
               <div className="absolute inset-0 animate-shimmer opacity-60" />
             </div>

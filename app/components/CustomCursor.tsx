@@ -48,8 +48,8 @@ export function CustomCursor() {
     <motion.div
       aria-hidden="true"
       className="cursor-glass"
-      style={{ translateX: smoothX, translateY: smoothY, scale: active ? 0.9 : 1, opacity: active ? 0.75 : 0.9 }}
-      transition={{ type: 'spring', stiffness: 260, damping: 24 }}
+      style={{ translateX: smoothX, translateY: smoothY, scale: active ? 0.88 : 1.02, opacity: active ? 0.78 : 0.92 }}
+      transition={{ type: 'spring', stiffness: 260, damping: 22, mass: 0.7 }}
     />
   );
 }

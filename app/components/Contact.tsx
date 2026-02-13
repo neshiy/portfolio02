@@ -52,7 +52,7 @@ export default function Contact() {
         <motion.form
           ref={formRef}
           onSubmit={handleSubmit}
-          className="glass glass-soft rounded-4xl p-10 md:p-16 space-y-12 relative overflow-hidden"
+          className="glass glass-soft rounded-4xl p-10 md:p-16 space-y-14 relative overflow-hidden"
           initial={{ opacity: 0, y: 50, scale: 0.97 }}
           animate={isInView ? { opacity: 1, y: 0, scale: 1 } : {}}
           transition={{ duration: 0.7, delay: 0.2, ease: 'easeOut' }}
@@ -60,7 +60,7 @@ export default function Contact() {
           {/* Subtle glow */}
           <div className="absolute -top-40 left-1/2 -translate-x-1/2 w-96 h-96 bg-purple-500/5 rounded-full blur-3xl pointer-events-none" />
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 relative z-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-9 relative z-10">
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               animate={isInView ? { opacity: 1, x: 0 } : {}}
@@ -86,7 +86,7 @@ export default function Contact() {
             <input type="text" name="company" placeholder="Company or Organization" className={inputClass} />
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 relative z-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-9 relative z-10">
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               animate={isInView ? { opacity: 1, x: 0 } : {}}
@@ -114,7 +114,7 @@ export default function Contact() {
               rows={8}
               required
               placeholder="Tell me about your project or say hello..."
-              className={`${inputClass} resize-none min-h-[220px] md:min-h-[260px] px-8 py-7`}
+              className={`${inputClass} resize-none min-h-55 md:min-h-65 px-8 py-7`}
             />
           </motion.div>
 
@@ -135,7 +135,7 @@ export default function Contact() {
           {error && <p className="text-red-400 text-sm font-semibold relative z-10">{error}</p>}
 
           <motion.div
-            className="flex flex-col sm:flex-row gap-5 pt-4 relative z-10 sm:justify-end sm:items-center"
+            className="flex flex-col sm:flex-row gap-6 pt-8 relative z-10 sm:justify-end sm:items-center"
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0.6 }}
